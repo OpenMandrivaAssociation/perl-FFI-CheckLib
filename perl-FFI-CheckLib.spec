@@ -16,10 +16,10 @@ Source0:    http://www.cpan.org/modules/by-module/FFI/%{upstream_name}-%{upstrea
 BuildRequires: perl(ExtUtils::MakeMaker)
 BuildRequires: perl(Module::Load)
 BuildRequires: perl(Test2::API) >= 1.302.15
-BuildRequires: perl(Test2::Mock) >= 0.0.60
-BuildRequires: perl(Test2::Require::EnvVar) >= 0.0.60
-BuildRequires: perl(Test2::Require::Module) >= 0.0.60
-BuildRequires: perl(Test2::V0) >= 0.0.60
+#BuildRequires: perl(Test2::Mock) >= 0.0.60
+#BuildRequires: perl(Test2::Require::EnvVar) >= 0.0.60
+#BuildRequires: perl(Test2::Require::Module) >= 0.0.60
+#BuildRequires: perl(Test2::V0) >= 0.0.60
 BuildArch:  noarch
 
 %description
