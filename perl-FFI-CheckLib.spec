@@ -13,6 +13,7 @@ Group:		Development/Perl
 Url:		https://metacpan.org/release/%{upstream_name}
 Source0:	http://www.cpan.org/modules/by-module/FFI/%{upstream_name}-%{upstream_version}.tar.gz
 
+BuildRequires:	make
 BuildRequires:	perl(ExtUtils::MakeMaker)
 BuildRequires:	perl(Module::Load)
 BuildRequires:	perl(Test2::API) >= 1.302.15
