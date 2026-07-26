@@ -1,17 +1,15 @@
 %define upstream_name FFI-CheckLib
-%define upstream_version 0.25
-
 %{?perl_default_filter}
 
 Name:		perl-%{upstream_name}
-Version:	%perl_convert_version %{upstream_version}
-Release:	3
+Version:	0.25
+Release:	4
 
 Summary:	Check that a library is available for FFI
 License:	GPLv1+ or Artistic
 Group:		Development/Perl
 Url:		https://metacpan.org/release/%{upstream_name}
-Source0:	http://www.cpan.org/modules/by-module/FFI/%{upstream_name}-%{upstream_version}.tar.gz
+Source0:	http://www.cpan.org/modules/by-module/FFI/%{upstream_name}-%{version}.tar.gz
 
 BuildRequires:	make
 BuildRequires:	perl(ExtUtils::MakeMaker)
@@ -34,7 +32,7 @@ probing. This modules does not have any non-core dependencies on Perls
 dependency on the Module::Build manpage.
 
 %prep
-%autosetup -p1 -n %{upstream_name}-%{upstream_version}
+%autosetup -p1 -n %{upstream_name}-%{version}
 
 %build
 perl Makefile.PL INSTALLDIRS=vendor
