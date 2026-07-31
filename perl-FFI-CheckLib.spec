@@ -2,8 +2,8 @@
 %{?perl_default_filter}
 
 Name:		perl-%{upstream_name}
-Version:	0.25
-Release:	4
+Version:	0.31
+Release:	1
 
 Summary:	Check that a library is available for FFI
 License:	GPLv1+ or Artistic
@@ -32,7 +32,7 @@ probing. This modules does not have any non-core dependencies on Perls
 dependency on the Module::Build manpage.
 
 %prep
-%autosetup -p1 -n %{upstream_name}-%{version}
+%autosetup -p1 -n FFI-CheckLib-0.31
 
 %build
 perl Makefile.PL INSTALLDIRS=vendor
